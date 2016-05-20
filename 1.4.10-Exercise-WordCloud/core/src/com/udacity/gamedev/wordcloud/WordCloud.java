@@ -69,16 +69,17 @@ public class WordCloud extends ApplicationAdapter {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
 
-        for (Word word : words) {
+        for (Word word : words)
+        {
 
             // TODO: Set the font's scale using font.getData().setScale()
-
+            font.getData().setScale(word.scale);
 
             // TODO: Set the font's tint using font.setColor()
-
+            font.setColor(word.color);
 
             // TODO: Actually draw the word using font.draw()
-
+            font.draw(batch,word.letters, word.x * Gdx.graphics.getWidth(), word.y * Gdx.graphics.getHeight());
         }
         batch.end();
     }
