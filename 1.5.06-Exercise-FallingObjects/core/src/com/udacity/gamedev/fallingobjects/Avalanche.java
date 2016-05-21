@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class Avalanche {
 
-    private static final float SPAWNS_PER_SECOND = 10;
+    private static final float SPAWNS_PER_SECOND = 50;
 
     Array<Boulder> boulders;
 
