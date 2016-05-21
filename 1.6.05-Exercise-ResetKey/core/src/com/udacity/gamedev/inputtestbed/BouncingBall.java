@@ -127,7 +127,8 @@ public class BouncingBall extends InputAdapter {
         }
 
         // TODO: If Keys.R was pressed, call init() to reset the ball
-
+        if(keycode == Keys.R)
+            init();
 
         return true;
     }
